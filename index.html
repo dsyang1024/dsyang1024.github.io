@@ -10,6 +10,20 @@ Use CSS header to make your header text "small caps".
 #ID
 Photo has a black border of 2px.
 Change the description font and size to one of your choosing.
+#work-samples
+a. Your styles.css file should contain relevant styling for this section. At minimum:
+
+Change the font style and size.
+b. You must use either an ordered or unordered list element to lay out the description text for each work sample.
+
+Use CSS to remove the bullet symbols.
+Ensure that the text is vertically aligned with the image.
+
+#footer
+Use CSS to give the footer a solid background color.
+Your html and css files should contain the appropriate code to:
+a. Center your content in the browser.
+b. Use the correct "viewport" to make your webpage "responsive", i.e. it should be scale for device size.
 -->
 
 <style>
@@ -22,10 +36,35 @@ Change the description font and size to one of your choosing.
         font-variant: small-caps;
     }
 
-    #ID {
-        border: 2px solid black;
+    #about {
         font-size: 20px;
         font-family: 'Courier New', Courier, monospace;
+    }
+
+    #meimg {
+        width: 200px;
+        border: 2px solid black;
+        float: left;
+        margin: 10px;
+    }
+
+    #workimg {
+        width: 200px;
+        height: 150px;
+        border: 2px solid black;
+        margin: 10px;
+    }
+
+    #work-samples {
+        font-size: 20px;
+        font-family: 'times new roman', Courier, monospace;
+        display: flex;
+    }
+
+    #footer {
+        responsive: true;
+        background-color: #b3e7ef;
+        text-align: center;
     }
 </style>
 
@@ -36,7 +75,82 @@ Change the description font and size to one of your choosing.
     <div id="header">
         <h1>Hi I'm DK</h1>
     </div>
-    
-    <p>Welcome to the home page</p>
+    <hr>
+    <div id="about">
+        <img id=meimg src="./photos/me.JPG">
+        <p>Dongseok Yang</p>
+        <p>Agricultural & Biological Eng. Major</p>
+        <p>Purdue University</p>
+        <p>West Lafayette, IN</p>
+        <p>3rd yeard Ph.D student</p>
+        <p><strong>Research Interest:</strong> Wetland Hydrology, Data Analysis, and Optimization</p>
+        <a href="https://www.linkedin.com/in/dongseok-yang-7b1b3b1b4/"><img src="./photos/Linkedin.png" width="20px"/></a>
+        <a href="mailto:yang2309@purdue.edu"><img src="./photos/email.png" width="20px"></a>
+        <a href="https://github.com/dsyang1024/dsyang1024.github.io.git"><img src="./photos/github.png" width="20px"></a>
+    </div>
 
+    <hr>
+
+    <div id="work-samples">
+        <img id="workimg" src="./photos/wetland.jpeg" height="100" width="200">
+        <!-- add table 1 column 3 rows -->
+        <table>
+            <tr>
+                <td><b>Wetland Hydrology</b></td>
+            </tr>
+            <tr>
+                <td>Analyze impact of the depressional storage</td>
+            </tr>
+            <tr>
+                <td>How much water we are saving from the wetland?</td>
+            </tr>
+            <tr>
+                <td>How much water quality impact we have from the saving water?</td>
+            </tr>
+        </table>
+    </div> 
+    <hr>      
+    <div id="work-samples">
+        <img id="workimg" src="./photos/data.jpg" height="100" width="200">
+        <!-- add table 1 column 3 rows -->
+        <table>
+            <tr>
+                <td><b>Data Analysis</b></td>
+            </tr>
+            <tr>
+                <td>Analyze temporal scale data</td>
+            </tr>
+            <tr>
+                <td>Collect data from the real world!</td>
+            </tr>
+            <tr>
+                <td>Using the numerical data, find correlation or characteristics!</td>
+            </tr>
+        </table>
+    </div> 
+    <hr>   
+    <div id="work-samples">
+        <img id="workimg" src="./photos/model.jpg" height="100" width="200">
+        <!-- add table 1 column 3 rows -->
+        <table>
+            <tr>
+                <td><b>Hydrologic Modeling</b></td>
+            </tr>
+            <tr>
+                <td>Analysis hydrologic respond from climatologic activity!</td>
+            </tr>
+            <tr>
+                <td>Analyze input and output from the model!</td>
+            </tr>
+            <tr>
+                <td>Modify model if needed :)</td>
+            </tr>
+        </table>
+    </div> 
+    <hr>
+
+
+        <!-- make flexbox -->
+    <footer id="footer">
+        <p>© Last update: 2024 Aug @ Ag-informatics</p>
 </html>
