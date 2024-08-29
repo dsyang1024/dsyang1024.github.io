@@ -1,3 +1,39 @@
-header.ex1 {
+#header {
     min-height: 40px;
-  };
+    text-align: center;
+    font-size: 20px;
+    font-style: italic;
+    font-family:'Gill Sans';
+    font-variant: small-caps;
+}
+
+#about {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#meimg {
+    width: 200px;
+    border: 2px solid black;
+    float: left;
+    margin: 10px;
+}
+
+#workimg {
+    width: 200px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#work-samples {
+    font-size: 20px;
+    font-family: 'times new roman', Courier, monospace;
+    display: flex;
+}
+
+#footer {
+    responsive: true;
+    background-color: #b3e7ef;
+    text-align: center;
+}
